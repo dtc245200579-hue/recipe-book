@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành - Tạo menu ngang</title>
+    <title>Layout HTML5 và CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Menu ngang có danh sách thả xuống</h2>
-    <nav id="menu" aria-label="Menu chính">
-        <ul>
-            <li>
-                <a href="#">Sem 1</a>
-                <ul>
-                    <li><a href="#">Computing Fundamental</a></li>
-                    <li><a href="#">C Programming</a></li>
-                    <li><a href="#">Building Dynamic Website</a></li>
-                    <li><a href="#">MS Transact-SQL</a></li>
-                    <li><a href="#">Project</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Sem 2</a>
-                <ul>
-                    <li><a href="#">Cloud Computing</a></li>
-                    <li><a href="#">APJ - I</a></li>
-                    <li><a href="#">APJ - II</a></li>
-                    <li><a href="#">APJ - III</a></li>
-                    <li><a href="#">eProject</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sem 3</a></li>
-            <li><a href="#">Sem 4</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <h3>Hướng dẫn kiểm tra</h3>
-        <p>Di chuyển chuột vào <strong>Sem 1</strong> hoặc <strong>Sem 2</strong> để mở menu con.</p>
-        <p>Di chuyển chuột vào một mục bất kỳ để xem màu nền chuyển sang đỏ.</p>
-    </main>
+<header>
+    <h1>Website HTML5</h1>
+    <p>Thiết kế layout với các thẻ HTML5 và CSS</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <section>
+        <h2>Nội dung chính</h2>
+
+        <article>
+            <h3>Bài viết 1</h3>
+            <p>
+                Đây là nội dung của bài viết đầu tiên. Phần này được đặt
+                bên trong thẻ article của HTML5.
+            </p>
+        </article>
+
+        <article>
+            <h3>Bài viết 2</h3>
+            <p>
+                Đây là nội dung của bài viết thứ hai. Layout được xây dựng
+                bằng các thẻ header, nav, section, article, aside và footer.
+            </p>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Thông tin bên cạnh</h2>
+        <ul>
+            <li><a href="#">Thông tin 1</a></li>
+            <li><a href="#">Thông tin 2</a></li>
+            <li><a href="#">Thông tin 3</a></li>
+            <li><a href="#">Thông tin 4</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Bài tập HTML5 và CSS</p>
+</footer>
+
 </body>
 </html>
