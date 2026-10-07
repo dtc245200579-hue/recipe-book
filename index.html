@@ -3,61 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout HTML5 và CSS</title>
+    <title>Facebook - Giao diện giản lược</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Website HTML5</h1>
-    <p>Thiết kế layout với các thẻ HTML5 và CSS</p>
+<header class="header">
+    <div class="header-left">
+        <div class="logo">f</div>
+        <input type="text" class="search" placeholder="Tìm kiếm trên Facebook">
+    </div>
+
+    <nav class="header-menu">
+        <a href="#" class="active">Trang chủ</a>
+        <a href="#">Bạn bè</a>
+        <a href="#">Video</a>
+        <a href="#">Nhóm</a>
+    </nav>
+
+    <div class="header-right">
+        <button>☰</button>
+        <button>💬</button>
+        <button>🔔</button>
+        <div class="avatar small">H</div>
+    </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Dịch vụ</a></li>
-        <li><a href="#">Tin tức</a></li>
-        <li><a href="#">Liên hệ</a></li>
-    </ul>
-</nav>
+<div class="page">
 
-<main class="container">
-    <section>
-        <h2>Nội dung chính</h2>
+    <aside class="sidebar left-sidebar">
+        <div class="profile">
+            <div class="avatar">H</div>
+            <strong>Hiếu</strong>
+        </div>
 
-        <article>
-            <h3>Bài viết 1</h3>
-            <p>
-                Đây là nội dung của bài viết đầu tiên. Phần này được đặt
-                bên trong thẻ article của HTML5.
-            </p>
-        </article>
-
-        <article>
-            <h3>Bài viết 2</h3>
-            <p>
-                Đây là nội dung của bài viết thứ hai. Layout được xây dựng
-                bằng các thẻ header, nav, section, article, aside và footer.
-            </p>
-        </article>
-    </section>
-
-    <aside>
-        <h2>Thông tin bên cạnh</h2>
-        <ul>
-            <li><a href="#">Thông tin 1</a></li>
-            <li><a href="#">Thông tin 2</a></li>
-            <li><a href="#">Thông tin 3</a></li>
-            <li><a href="#">Thông tin 4</a></li>
-        </ul>
+        <a href="#">👤 Bạn bè</a>
+        <a href="#">👥 Nhóm</a>
+        <a href="#">📰 Bảng tin</a>
+        <a href="#">📺 Video</a>
+        <a href="#">🛒 Marketplace</a>
+        <a href="#">⏰ Kỷ niệm</a>
+        <a href="#">💾 Đã lưu</a>
     </aside>
-</main>
 
-<footer>
-    <p>&copy; 2026 - Bài tập HTML5 và CSS</p>
-</footer>
+    <main class="content">
+
+        <div class="stories">
+            <div class="story create">
+                <div class="story-image">+</div>
+                <strong>Tạo tin</strong>
+            </div>
+
+            <div class="story">
+                <div class="story-image color1">🏞️</div>
+                <strong>Bạn bè</strong>
+            </div>
+
+            <div class="story">
+                <div class="story-image color2">🌅</div>
+                <strong>Khoảnh khắc</strong>
+            </div>
+
+            <div class="story">
+                <div class="story-image color3">🏖️</div>
+                <strong>Du lịch</strong>
+            </div>
+        </div>
+
+        <div class="post-box">
+            <div class="post-top">
+                <div class="avatar">H</div>
+                <input type="text" placeholder="Hiếu ơi, bạn đang nghĩ gì?">
+            </div>
+
+            <div class="post-actions">
+                <button>🔴 Video trực tiếp</button>
+                <button>🖼️ Ảnh/video</button>
+                <button>😊 Cảm xúc</button>
+            </div>
+        </div>
+
+        <article class="post">
+            <div class="post-header">
+                <div class="avatar">H</div>
+                <div>
+                    <strong>Hiếu</strong>
+                    <small>2 giờ · 🌎</small>
+                </div>
+            </div>
+
+            <p>
+                Chào mọi người! Đây là giao diện Facebook giản lược được
+                xây dựng bằng HTML và CSS.
+            </p>
+
+            <div class="post-image">📷<br>Hình ảnh bài đăng</div>
+
+            <div class="post-info">
+                <span>👍 ❤️ 125</span>
+                <span>20 bình luận · 5 lượt chia sẻ</span>
+            </div>
+
+            <div class="post-buttons">
+                <button>👍 Thích</button>
+                <button>💬 Bình luận</button>
+                <button>↗ Chia sẻ</button>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-header">
+                <div class="avatar">A</div>
+                <div>
+                    <strong>Nguyễn An</strong>
+                    <small>5 giờ · 🌎</small>
+                </div>
+            </div>
+
+            <p>Hôm nay là một ngày thật tuyệt! 😊</p>
+
+            <div class="post-info">
+                <span>👍 ❤️ 87</span>
+                <span>12 bình luận</span>
+            </div>
+
+            <div class="post-buttons">
+                <button>👍 Thích</button>
+                <button>💬 Bình luận</button>
+                <button>↗ Chia sẻ</button>
+            </div>
+        </article>
+
+    </main>
+
+    <aside class="sidebar right-sidebar">
+        <h3>Người liên hệ</h3>
+
+        <div class="contact">
+            <div class="avatar online">A</div>
+            <span>Nguyễn An</span>
+        </div>
+
+        <div class="contact">
+            <div class="avatar online">M</div>
+            <span>Minh Anh</span>
+        </div>
+
+        <div class="contact">
+            <div class="avatar online">T</div>
+            <span>Tuấn</span>
+        </div>
+
+        <div class="contact">
+            <div class="avatar">L</div>
+            <span>Lan</span>
+        </div>
+    </aside>
+
+</div>
 
 </body>
 </html>
